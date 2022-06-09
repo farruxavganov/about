@@ -1,0 +1,140 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    height: auto;
+    background: #f1f5f8;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+button:hover {
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+.wrapper {
+    width: 60%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: auto
+}
+.setion-info {
+    margin-top: 60px;
+}
+.section-info__title {
+    margin: 7px 0;
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+}
+.section-info__disc {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+/*    align-items: center;*/
+    margin-top: 30px;
+    width: 100%;
+}
+.col {
+    width: 50%;
+    flex-shrink: 0;
+}
+.content__img  {
+    height: 250px;
+    border-radius: 5px;
+}
+.content__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.content__wrapper {
+    border-radius: 5px;
+    padding: 0 0 0 30px;
+}
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn {
+    width: calc(100%  / 3);
+    padding: 10px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.btn.active {
+    background-color: #fff;
+}
+.content__inner {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    min-height: 215px;
+    border-radius: 5px;
+}
+.about {
+    display: none;
+    margin-top: 5px;
+}
+.about.active {
+    display: block;
+}
+.about__title {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.about__disc {
+    font-size: .9rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.about__lists {
+    margin-top: 8px;
+}
+.about__list {
+    font-size: .9rem;
+    letter-spacing: 1px;
+    margin: 3px 0;
+}
+@media (max-width: 728px) {
+    .wrapper {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+    }
+    .content__wrapper {
+        margin-top: 15px;
+        padding: 0;
+    }
+}
